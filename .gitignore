@@ -1,0 +1,8 @@
+/.vs
+/stm32/Project_stm32/STM32F107.uvguix.Administrator
+/example/stm32-with-rtos/Project_stm32/Listings
+/example/stm32-with-rtos/Project_stm32/Objects
+/example/stm32-no-rtos/Project_stm32/Listings
+/example/stm32-no-rtos/Project_stm32/Objects
+/example/stm32-no-rtos/Project_stm32/*.Administrator
+/example/stm32-with-rtos/Project_stm32/STM32F107.uvguix.Administrator
