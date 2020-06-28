@@ -8,7 +8,7 @@
 #define TSH_MSG_ARGC      5
 
 /* 消息队列个数    */
-#define TSH_MSG_COUNT     5
+#define TSH_MSG_COUNT     2
 
 /* 每条消息长度    */
 #define TSH_MSG_SIZE      32

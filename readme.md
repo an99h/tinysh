@@ -6,12 +6,13 @@
 
 1. 克隆`Tinysh`
 3. 配置工程头文件索引 `xxx/Tinysh/include`  `xxx/csl/include`
+3. 添加3rdparty cls库（example里有）
 4. 在自己工程添加初始化函数 `tsh_init("uname")`
-5. 有RTOS环境需要创建`tsh_uart_task()`任务，并添加`TINYSH_RTOS`宏
-6. 无RTOS裸机环境在主循环里添加`tsh_cli_msg_procedure()`，并添加`TINYSH_NOOS`宏
+5. 有RTOS环境需要创建`tsh_uart_task()`任务
+6. 无RTOS裸机环境在主循环里添加`tsh_cli_msg_procedure()`
 7. 修改`tsh_config.h`
 8. 在`shell.c`添加自己的命令
-8. 添加几个函数定义
+9. 添加几个函数定义
 
 ### tsh_config.h介绍
 
@@ -26,7 +27,7 @@
 #define TSH_MSG_ARGC      5
 
 /* 消息队列个数    */
-#define TSH_MSG_COUNT     5
+#define TSH_MSG_COUNT     2
 
 /* 每条消息长度    */
 #define TSH_MSG_SIZE      32

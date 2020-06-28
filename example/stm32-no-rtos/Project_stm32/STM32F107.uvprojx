@@ -363,7 +363,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F10X_CL,USE_STDPERIPH_DRIVER,TINYSH_NOOS</Define>
+              <Define>STM32F10X_CL,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\FreeRTOS\include;..\FreeRTOS\portable\RVDS\ARM_CM3;..\user;..\STM32F107\fwlib\inc;..\STM32F107\hardware;..\STM32F107\system;..\STM32F107\system\core;..\STM32F107\system\delay;..\STM32F107\system\sys;..\..\..\tinysh\include;..\3rdparty\csl\include</IncludePath>
             </VariousControls>
