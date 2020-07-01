@@ -287,6 +287,11 @@ void tsh_uart_irq(uart_dev_t* uart)
 
     if (ch != 0x08)  // !É¾³ý¼ü
     {
+		if (ch == 0x09) // !TAP¼ü
+        {
+            return;
+        }
+		
         if (tsh_login)
         {
             tsh_uart_send_byte(uart, ch);
@@ -354,6 +359,8 @@ SHELL_HISTORY_T cmd_history =
 
 static void _tsh_set_history(char* cmd, int len)
 {
+	cmd_history.index = 0;
+	
     if (len <= 0)
     {
         return;
@@ -363,7 +370,7 @@ static void _tsh_set_history(char* cmd, int len)
     {
         return;
     }
-    cmd_history.index = 0;
+    
     memcpy(cmd_history.shell_history[cmd_history.counts++], cmd, len);
 
     if (cmd_history.counts == TSH_HISTORY_COUNT)
