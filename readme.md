@@ -74,7 +74,10 @@ void shell_add_cmd(void)
 
 在函数shell_add_cmd()里添加自己的命令
 
-格式为：【命令，处理函数，命令描述】
+格式为：
+
+- TSH_CMD_ADD_CLI【命令，处理函数，命令描述】
+- TSH_CMD_ADD_VAR【全局变量名】
 
 ### 在自己工程里完成以下函数定义
 
@@ -129,4 +132,9 @@ stm32:)
 stm32:)hello world
 tsh: command not found: hello
 stm32:)
+stm32:)var1  
+var1 = 0
+stm32:)var1 = 100
+stm32:)var1
+var1 = 100
 ```
