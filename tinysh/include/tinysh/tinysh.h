@@ -4,7 +4,7 @@
 #include "csl/cs_base_types.h"
 #include "tsh_main/tsh_config.h"
 
-#define TSH_VERSION      "1.0.4"          /* Tinysh版本号  */
+#define TSH_VERSION      "1.1.0"          /* Tinysh版本号  */
 #define TSH_MSG_ID_CLI   101
 
 //用户实现

@@ -59,13 +59,16 @@ void shell_demo(CLI_ARG* arg)
       tsh_print("argv[%u]:%s\r\n", i, arg->argv[i]);
     }
 }
-
+int var1 = 0;
+int var2 = 1;
 void shell_add_cmd(void)
 {
-    tsh_cmd_add("version",  shell_version, "show tsh version");
-    tsh_cmd_add("sys_info", shell_sysinfo, "show sysinfo");
-    tsh_cmd_add("clear",    shell_clear,   "clean screen");
-    tsh_cmd_add("demo",     shell_demo,    "tinysh cli demo");
+    TSH_CMD_ADD_CLI("version",  shell_version, "show tsh version");
+    TSH_CMD_ADD_CLI("sys_info", shell_sysinfo, "show sysinfo");
+    TSH_CMD_ADD_CLI("clear",    shell_clear,   "clean screen");
+    TSH_CMD_ADD_CLI("demo",     shell_demo,    "tinysh cli demo");
+    TSH_CMD_ADD_VAR(var1);
+    TSH_CMD_ADD_VAR(var2);
 }
 ```
 
@@ -105,12 +108,17 @@ void tsh_uart_send_data(uart_dev_t* dev, char* buf, unsigned char len);
 
 ```shell
 stm32:)help
-   version  ---  show tsh version
-     clear  ---  clean screen
-      demo  ---  tinysh cli demo
+-c- help           ---  print all cmd
+-c- version        ---  show tsh version
+-c- sys_info       ---  show sysinfo
+-c- clear          ---  clean screen
+-c- demo           ---  tinysh cli demo
+-c- g_variable     ---  show all global variable
+-v- var1           ---  get/set var1
+-v- var2           ---  get/set var2
 stm32:)
 stm32:)version
-tsh version:1.0.1
+tsh version:1.1.0
 stm32:)
 stm32:)demo 123 456 789
 argv[0]:demo
