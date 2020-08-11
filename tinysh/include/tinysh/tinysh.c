@@ -240,6 +240,11 @@ void tsh_uart_irq(uart_dev_t* uart)
     unsigned char stop_flag = 0;
     static int key_direction = 0;
 
+    if (tsh_uart_recv_byte(uart, &ch) != 0)
+    {
+        return;
+    }
+	
     if (!cache)
     {
         cache = (char*)cs_object_pool_obtain(msg_pool);
@@ -248,11 +253,6 @@ void tsh_uart_irq(uart_dev_t* uart)
             return;
         }
         cs_memwriter_attach(&mem, cache, TSH_MSG_SIZE);
-    }
-
-    if (tsh_uart_recv_byte(uart, &ch) != 0)
-    {
-        return;
     }
 
     cur_len = cs_memwriter_get_cursor(&mem);

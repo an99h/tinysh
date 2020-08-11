@@ -40,7 +40,7 @@ int fputc(int ch, FILE * f)
 {
     USART_SendData(USART1, (uint8_t)ch);
 
-    while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET) {}
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET) {}
 
     return ch;
 }
@@ -161,17 +161,17 @@ void uart_send_data(USART_TypeDef* UARTx, u8* buf, u16 len)
     u8 i = 0;
     for (; i < len; i++)
     {
-        while (USART_GetFlagStatus(UARTx, USART_FLAG_TC) == RESET);
+        while (USART_GetFlagStatus(UARTx, USART_FLAG_TXE) == RESET);
         USART_SendData(UARTx, buf[i]);
     }
-    while (USART_GetFlagStatus(UARTx, USART_FLAG_TC) == RESET);
+    while (USART_GetFlagStatus(UARTx, USART_FLAG_TXE) == RESET);
 }
 
 void UART_Send_Byte(USART_TypeDef* UARTx, u8 ch)
 {
-    while (USART_GetFlagStatus(UARTx, USART_FLAG_TC) == RESET);
+    while (USART_GetFlagStatus(UARTx, USART_FLAG_TXE) == RESET);
     USART_SendData(UARTx, ch);
-    while (USART_GetFlagStatus(UARTx, USART_FLAG_TC) == RESET);
+    while (USART_GetFlagStatus(UARTx, USART_FLAG_TXE) == RESET);
 }
 
 int uart_read_byte(USART_TypeDef* UARTx, u8* ch)
