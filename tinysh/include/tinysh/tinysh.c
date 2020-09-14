@@ -15,7 +15,7 @@ extern cs_list_t msg_send;
 #define LF                  0x0a
 #define CR                  0x0d
 #define TSH_NAME_LEN        10
-bool tsh_login = 1;
+u8 tsh_login = !(TSH_PASSWORD_ON);
 char tsh_name[TSH_NAME_LEN] = {'T', 'S', 'H'};
 void* msg_pool;
 

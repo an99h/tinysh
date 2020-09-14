@@ -423,11 +423,6 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\tinysh\include\tsh_main\shell.c</FilePath>
             </File>
-            <File>
-              <FileName>tsh_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\tinysh\include\tsh_main\tsh_config.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -573,6 +568,11 @@
         <Group>
           <GroupName>tinysh</GroupName>
           <Files>
+            <File>
+              <FileName>tsh_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\tinysh\include\tsh_main\tsh_config.h</FilePath>
+            </File>
             <File>
               <FileName>kmq.c</FileName>
               <FileType>1</FileType>

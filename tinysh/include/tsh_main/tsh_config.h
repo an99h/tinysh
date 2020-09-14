@@ -22,6 +22,9 @@
 /* Tinysh密码  logout退出登录  */
 #define TSH_PASSWORD     "root"
 
+/* Tinysh 默认是否开启密码 */
+#define TSH_PASSWORD_ON     1
+
 /* Tinysh打印函数 根据自己平台修改*/
 #define tsh_print        printf
 

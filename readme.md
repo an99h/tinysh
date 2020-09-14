@@ -41,6 +41,9 @@
 /* Tinysh密码  logout退出登录  */
 #define TSH_PASSWORD     "root"
 
+/* Tinysh 默认是否开启密码 */
+#define TSH_PASSWORD_ON     1
+
 /* Tinysh打印函数 根据自己平台修改*/
 #define tsh_print        printf
 
@@ -110,6 +113,13 @@ void tsh_uart_send_data(uart_dev_t* dev, char* buf, unsigned char len);
 ### 示例效果
 
 ```shell
+stm32:)login!
+stm32:)login!
+stm32:)****
+login error!!!
+stm32:)****
+login success!
+stm32:)
 stm32:)help
 -c- help           ---  print all cmd
 -c- version        ---  show tsh version
