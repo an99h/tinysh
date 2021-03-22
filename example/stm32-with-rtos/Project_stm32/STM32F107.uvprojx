@@ -544,24 +544,24 @@
           <GroupName>3rdparty</GroupName>
           <Files>
             <File>
-              <FileName>cs_linked_hash_map.o</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\3rdparty\csl\include\csl\cs_linked_hash_map.o</FilePath>
+              <FileName>cs_linked_hash_map.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\3rdparty\csl\include\csl\cs_linked_hash_map.c</FilePath>
             </File>
             <File>
-              <FileName>cs_list.o</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\3rdparty\csl\include\csl\cs_list.o</FilePath>
+              <FileName>cs_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\3rdparty\csl\include\csl\cs_list.c</FilePath>
             </File>
             <File>
-              <FileName>cs_memwriter.o</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\3rdparty\csl\include\csl\cs_memwriter.o</FilePath>
+              <FileName>cs_memwriter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\3rdparty\csl\include\csl\cs_memwriter.c</FilePath>
             </File>
             <File>
-              <FileName>cs_object_pool.o</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\3rdparty\csl\include\csl\cs_object_pool.o</FilePath>
+              <FileName>cs_object_pool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\3rdparty\csl\include\csl\cs_object_pool.c</FilePath>
             </File>
           </Files>
         </Group>

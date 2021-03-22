@@ -71,7 +71,7 @@
         <LExpSel>0</LExpSel>
       </OPTXL>
       <OPTFL>
-        <tvExp>1</tvExp>
+        <tvExp>0</tvExp>
         <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
@@ -214,7 +214,7 @@
 
   <Group>
     <GroupName>user</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -547,52 +547,52 @@
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>23</FileNumber>
-      <FileType>3</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\3rdparty\csl\include\csl\cs_linked_hash_map.o</PathWithFileName>
-      <FilenameWithoutPath>cs_linked_hash_map.o</FilenameWithoutPath>
+      <PathWithFileName>..\3rdparty\csl\include\csl\cs_linked_hash_map.c</PathWithFileName>
+      <FilenameWithoutPath>cs_linked_hash_map.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>24</FileNumber>
-      <FileType>3</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\3rdparty\csl\include\csl\cs_list.o</PathWithFileName>
-      <FilenameWithoutPath>cs_list.o</FilenameWithoutPath>
+      <PathWithFileName>..\3rdparty\csl\include\csl\cs_list.c</PathWithFileName>
+      <FilenameWithoutPath>cs_list.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>25</FileNumber>
-      <FileType>3</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\3rdparty\csl\include\csl\cs_memwriter.o</PathWithFileName>
-      <FilenameWithoutPath>cs_memwriter.o</FilenameWithoutPath>
+      <PathWithFileName>..\3rdparty\csl\include\csl\cs_memwriter.c</PathWithFileName>
+      <FilenameWithoutPath>cs_memwriter.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>26</FileNumber>
-      <FileType>3</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\3rdparty\csl\include\csl\cs_object_pool.o</PathWithFileName>
-      <FilenameWithoutPath>cs_object_pool.o</FilenameWithoutPath>
+      <PathWithFileName>..\3rdparty\csl\include\csl\cs_object_pool.c</PathWithFileName>
+      <FilenameWithoutPath>cs_object_pool.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -600,7 +600,7 @@
 
   <Group>
     <GroupName>tinysh</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
